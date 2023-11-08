@@ -34,16 +34,16 @@ const chartData = {
         show: false
       },
       y: {
-        title: 'Total Order'
+        title: 'Tổng số đơn hàng'
       },
       marker: {
         show: false
       }
     }
   },
-  series: [
+  serie: [
     {
-      name: 'series1',
+      name: 'vòng 1',
       data: [35, 44, 9, 54, 45, 66, 41, 69]
     }
   ]

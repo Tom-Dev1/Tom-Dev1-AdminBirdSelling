@@ -203,7 +203,7 @@ const NotificationSection = () => {
                   <Divider />
                   <CardActions sx={{ p: 1.25, justifyContent: 'center' }}>
                     <Button size="small" disableElevation>
-                      View All
+                      Xem tất cả
                     </Button>
                   </CardActions>
                 </MainCard>

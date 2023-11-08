@@ -21,15 +21,15 @@ import chartData from './chart-data/total-growth-bar-chart';
 const status = [
   {
     value: 'today',
-    label: 'Today'
+    label: 'Hôm nay'
   },
   {
     value: 'month',
-    label: 'This Month'
+    label: 'Tháng này'
   },
   {
     value: 'year',
-    label: 'This Year'
+    label: 'Năm nay'
   }
 ];
 
@@ -100,10 +100,10 @@ const TotalGrowthBarChart = ({ isLoading }) => {
                 <Grid item>
                   <Grid container direction="column" spacing={1}>
                     <Grid item>
-                      <Typography variant="subtitle2">Total Growth</Typography>
+                      <Typography variant="subtitle2">Tổng mức tăng trưởng</Typography>
                     </Grid>
                     <Grid item>
-                      <Typography variant="h3">$2,324.00</Typography>
+                      <Typography variant="h3">2.324.000₫</Typography>
                     </Grid>
                   </Grid>
                 </Grid>

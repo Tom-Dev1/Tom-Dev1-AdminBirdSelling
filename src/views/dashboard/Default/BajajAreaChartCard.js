@@ -44,14 +44,14 @@ const BajajAreaChartCard = () => {
             </Grid>
             <Grid item>
               <Typography variant="h4" sx={{ color: theme.palette.grey[800] }}>
-                $1839.00
+                1.000.839.000₫
               </Typography>
             </Grid>
           </Grid>
         </Grid>
         <Grid item xs={12}>
           <Typography variant="subtitle2" sx={{ color: theme.palette.grey[800] }}>
-            10% Profit
+            10% Tăng
           </Typography>
         </Grid>
       </Grid>

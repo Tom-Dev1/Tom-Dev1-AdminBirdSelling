@@ -74,12 +74,12 @@ const TotalIncomeDarkCard = ({ isLoading }) => {
                   }}
                   primary={
                     <Typography variant="h4" sx={{ color: '#fff' }}>
-                      $203k
+                      203k
                     </Typography>
                   }
                   secondary={
                     <Typography variant="subtitle2" sx={{ color: 'primary.light', mt: 0.25 }}>
-                      Total Income
+                      Tổng thu nhập
                     </Typography>
                   }
                 />

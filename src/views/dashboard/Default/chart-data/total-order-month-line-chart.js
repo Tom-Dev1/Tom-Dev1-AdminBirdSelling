@@ -34,7 +34,7 @@ const chartData = {
         show: false
       },
       y: {
-        title: 'Total Order'
+        title: 'Tổng số đơn hàng'
       },
       marker: {
         show: false
@@ -43,7 +43,7 @@ const chartData = {
   },
   series: [
     {
-      name: 'series1',
+      name: 'vòng 1',
       data: [45, 66, 41, 89, 25, 44, 9, 54]
     }
   ]

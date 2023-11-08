@@ -35,14 +35,23 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 
 import Google from 'assets/images/icons/social-google.svg';
 
+import useAuth from 'hooks/useAuth';
+
+// login JWT token
+
 // ============================|| FIREBASE - LOGIN ||============================ //
 
 const FirebaseLogin = ({ ...others }) => {
+  const { login } = useAuth();
   const theme = useTheme();
   const scriptedRef = useScriptRef();
   const matchDownSM = useMediaQuery(theme.breakpoints.down('md'));
   const customization = useSelector((state) => state.customization);
   const [checked, setChecked] = useState(true);
+
+  const handleSignIn = (username, password) => {
+    login(username, password);
+  };
 
   const googleHandler = async () => {
     console.error('Login');
@@ -125,7 +134,7 @@ const FirebaseLogin = ({ ...others }) => {
           submit: null
         }}
         validationSchema={Yup.object().shape({
-          email: Yup.string().email('Vui lòng điền email hợp lệ').max(255).required('Email không được để trống'),
+          // email: Yup.string().email('Vui lòng điền email hợp lệ').max(255).required('Email không được để trống'),
           password: Yup.string().max(255).required('Mật khẩu không được để trống')
         })}
         onSubmit={async (values, { setErrors, setStatus, setSubmitting }) => {
@@ -215,7 +224,16 @@ const FirebaseLogin = ({ ...others }) => {
 
             <Box sx={{ mt: 2 }}>
               <AnimateButton>
-                <Button disableElevation disabled={isSubmitting} fullWidth size="large" type="submit" variant="contained" color="secondary">
+                <Button
+                  disableElevation
+                  disabled={isSubmitting}
+                  fullWidth
+                  size="large"
+                  type="submit"
+                  variant="contained"
+                  color="secondary"
+                  onClick={() => handleSignIn(values.email, values.password)}
+                >
                   Đăng nhập
                 </Button>
               </AnimateButton>
